@@ -1,0 +1,42 @@
+type = "x86"
+arch = "Windows"
+author = "Alexey Melnichuk"
+depends = {
+[[lua > 5.1]],
+}
+
+desc = "A simple Lua wrapper for pthreads & WIN32 threads."
+version = "0.1.1"
+maintainer = "Alexey Melnichuk"
+files = {
+Runtime = {
+[[lib\lua\llthreads2.dll]],
+}
+,
+Data = {
+[[share\lua-llthreads2\COPYRIGHT.llthreads]],
+[[share\lua-llthreads2\README.md]],
+[[share\lua-llthreads2\LICENSE]],
+}
+,
+Test = {
+[[share\lua-llthreads2\test\\test_alive.lua]],
+[[share\lua-llthreads2\test\\test_join_detach.lua]],
+[[share\lua-llthreads2\test\\test_join_error.lua]],
+[[share\lua-llthreads2\test\\test_join_timeout.lua]],
+[[share\lua-llthreads2\test\\test_llthreads.lua]],
+[[share\lua-llthreads2\test\\test_load_llthreads2.lua]],
+[[share\lua-llthreads2\test\\test_logger.lua]],
+[[share\lua-llthreads2\test\\test_pass_cfunction.lua]],
+[[share\lua-llthreads2\test\\test_register_ffi.lua]],
+[[share\lua-llthreads2\test\\test_register_llthreads.lua]],
+[[share\lua-llthreads2\test\\test_table_copy.lua]],
+[[share\lua-llthreads2\test\\test_threads.lua]],
+[[share\lua-llthreads2\test\\utils.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "lua-llthreads2"
+url = "https://github.com/moteus/lua-llthreads2"
